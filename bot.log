@@ -1580,3 +1580,31 @@ AttributeError: 'SheetsService' object has no attribute 'logger'
 2025-06-16 12:08:09,271 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
 2025-06-16 12:08:09,271 - httpcore.http11 - DEBUG - send_request_body.complete
 2025-06-16 12:08:09,271 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-16 12:08:19,438 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Mon, 16 Jun 2025 10:08:19 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'23'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2025-06-16 12:08:19,439 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8074566163:AAHrY-EO1pS2KfhnJSwVnuWtRHfdBs0g16s/getUpdates "HTTP/1.1 200 OK"
+2025-06-16 12:08:19,439 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-16 12:08:19,439 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-16 12:08:19,440 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-16 12:08:19,440 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-16 12:08:19,440 - telegram.ext.ExtBot - DEBUG - Call to Bot API endpoint `getUpdates` finished with return value `[]`
+2025-06-16 12:08:19,440 - telegram.ext.ExtBot - DEBUG - No new updates found.
+2025-06-16 12:08:19,441 - telegram.ext.ExtBot - DEBUG - Calling Bot API endpoint `getUpdates` with parameters `{'timeout': 10, 'offset': 111011621}`
+2025-06-16 12:08:19,441 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-16 12:08:19,441 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-16 12:08:19,441 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-16 12:08:19,441 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-16 12:08:19,441 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-16 12:08:29,521 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Mon, 16 Jun 2025 10:08:29 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'23'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2025-06-16 12:08:29,521 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8074566163:AAHrY-EO1pS2KfhnJSwVnuWtRHfdBs0g16s/getUpdates "HTTP/1.1 200 OK"
+2025-06-16 12:08:29,521 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-16 12:08:29,521 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-16 12:08:29,521 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-16 12:08:29,521 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-16 12:08:29,522 - telegram.ext.ExtBot - DEBUG - Call to Bot API endpoint `getUpdates` finished with return value `[]`
+2025-06-16 12:08:29,522 - telegram.ext.ExtBot - DEBUG - No new updates found.
+2025-06-16 12:08:29,522 - telegram.ext.ExtBot - DEBUG - Calling Bot API endpoint `getUpdates` with parameters `{'timeout': 10, 'offset': 111011621}`
+2025-06-16 12:08:29,522 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-16 12:08:29,522 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-16 12:08:29,522 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-16 12:08:29,522 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-16 12:08:29,523 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
