@@ -1608,3 +1608,45 @@ AttributeError: 'SheetsService' object has no attribute 'logger'
 2025-06-16 12:08:29,522 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
 2025-06-16 12:08:29,522 - httpcore.http11 - DEBUG - send_request_body.complete
 2025-06-16 12:08:29,523 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-16 12:08:39,594 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Mon, 16 Jun 2025 10:08:39 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'23'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2025-06-16 12:08:39,595 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8074566163:AAHrY-EO1pS2KfhnJSwVnuWtRHfdBs0g16s/getUpdates "HTTP/1.1 200 OK"
+2025-06-16 12:08:39,595 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-16 12:08:39,595 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-16 12:08:39,595 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-16 12:08:39,595 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-16 12:08:39,596 - telegram.ext.ExtBot - DEBUG - Call to Bot API endpoint `getUpdates` finished with return value `[]`
+2025-06-16 12:08:39,596 - telegram.ext.ExtBot - DEBUG - No new updates found.
+2025-06-16 12:08:39,596 - telegram.ext.ExtBot - DEBUG - Calling Bot API endpoint `getUpdates` with parameters `{'timeout': 10, 'offset': 111011621}`
+2025-06-16 12:08:39,597 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-16 12:08:39,598 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-16 12:08:39,599 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-16 12:08:39,599 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-16 12:08:39,600 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-16 12:08:49,676 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Mon, 16 Jun 2025 10:08:49 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'23'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2025-06-16 12:08:49,678 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8074566163:AAHrY-EO1pS2KfhnJSwVnuWtRHfdBs0g16s/getUpdates "HTTP/1.1 200 OK"
+2025-06-16 12:08:49,678 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-16 12:08:49,678 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-16 12:08:49,678 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-16 12:08:49,679 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-16 12:08:49,679 - telegram.ext.ExtBot - DEBUG - Call to Bot API endpoint `getUpdates` finished with return value `[]`
+2025-06-16 12:08:49,679 - telegram.ext.ExtBot - DEBUG - No new updates found.
+2025-06-16 12:08:49,680 - telegram.ext.ExtBot - DEBUG - Calling Bot API endpoint `getUpdates` with parameters `{'timeout': 10, 'offset': 111011621}`
+2025-06-16 12:08:49,681 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-16 12:08:49,681 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-16 12:08:49,681 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-16 12:08:49,681 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-16 12:08:49,681 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-16 12:08:59,773 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Mon, 16 Jun 2025 10:08:59 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'23'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2025-06-16 12:08:59,774 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8074566163:AAHrY-EO1pS2KfhnJSwVnuWtRHfdBs0g16s/getUpdates "HTTP/1.1 200 OK"
+2025-06-16 12:08:59,774 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-16 12:08:59,775 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-16 12:08:59,775 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-16 12:08:59,775 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-16 12:08:59,776 - telegram.ext.ExtBot - DEBUG - Call to Bot API endpoint `getUpdates` finished with return value `[]`
+2025-06-16 12:08:59,776 - telegram.ext.ExtBot - DEBUG - No new updates found.
+2025-06-16 12:08:59,777 - telegram.ext.ExtBot - DEBUG - Calling Bot API endpoint `getUpdates` with parameters `{'timeout': 10, 'offset': 111011621}`
+2025-06-16 12:08:59,777 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-16 12:08:59,778 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-16 12:08:59,778 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-16 12:08:59,779 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-16 12:08:59,779 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
