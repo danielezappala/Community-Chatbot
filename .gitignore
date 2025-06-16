@@ -1,1 +1,79 @@
+# File di credenziali
 credentials.json
+*.json
+
+# File di ambiente
+.env
+.env.*
+!.env.example
+
+# File di configurazione locale
+config.local.*
+
+# File di sistema
+.DS_Store
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# File di log
+*.log
+
+# File di IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# File temporanei
+*.tmp
+*.bak
+*~
+
+# File di Python
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+
+# File di distribuzione
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# File di test
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# File di Jupyter Notebook
+.ipynb_checkpoints
+
+# File di database locale
+*.db
+*.sqlite3
+
+# File di ambiente Python
+.env
+.venv
+env/
+venv/
+ENV/
+
+# File di configurazione Python
+.pytest_cache/
+.mypy_cache/

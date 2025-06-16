@@ -2,7 +2,7 @@ import logging
 from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes, MessageHandler, filters
 from datetime import datetime
-from sheets_handler import add_row_to_sheet
+from src.services.sheets import SheetsService
 
 # Enable logging
 logging.basicConfig(
@@ -124,7 +124,8 @@ async def spesa_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> N
 
         print(f"Prima di chiamare add_row_to_sheet - PRINT. values_to_add: {values_to_add}")
         logger.info(f"Chiamo add_row_to_sheet con: {values_to_add}")
-        result = add_row_to_sheet(values_to_add)
+        sheets_service = SheetsService()
+        result = sheets_service.add_expense(values_to_add)
         print(f"Dopo chiamata add_row_to_sheet - PRINT. result: {result}")
         logger.info(f"Risultato add_row_to_sheet: {result}")
         # Scrive sullo sheet e risponde SEMPRE

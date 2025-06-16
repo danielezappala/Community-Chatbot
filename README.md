@@ -11,11 +11,8 @@ utilizzo del chatbot sopra citato
 applicazione agentica con llm per gestire i calendari google Le funzionalità e le modalità sono a discrezione della community. Potranno essere aggiunte funzionalità, grafiche, analisi, e così via.
 
 
----
 
-Un bot Telegram per la gestione delle spese condivise che salva i dati su Google Sheets. Il progetto è pensato per unire l'esperienza degli sviluppatori senior con la freschezza dei junior, creando uno strumento utile e ben strutturato.
-
-## 🚀 Funzionalità
+## 🚀 Branch initial-bot-setup 
 
 - **Gestione Spese**
   - Aggiungi spese con categoria, importo e descrizione
@@ -71,7 +68,41 @@ Un bot Telegram per la gestione delle spese condivise che salva i dati su Google
    TELEGRAM_BOT_TOKEN=il_tuo_token_qui
    ```
 
-### 2. Configura Google Sheets
+### 2. Configurazione delle credenziali e delle variabili d'ambiente
+1. **Configurazione delle credenziali**
+   - Crea un bot Telegram con [@BotFather](https://t.me/botfather) e ottieni il token
+   - Crea un progetto su [Google Cloud Console](https://console.cloud.google.com/)
+   - Abilita l'API Google Sheets
+   - Crea le credenziali e scarica il file JSON
+   - Rinomina il file in `credentials.json` e posizionalo in una cartella sicura (es. `~/.config/your-app/`)
+
+2. **Configurazione delle variabili d'ambiente**
+   ```bash
+   # Copia il file di esempio e modificalo con le tue credenziali
+   cp .env.example .env
+   
+   # Modifica il file .env con le tue credenziali
+   nano .env
+   ```
+   
+   Assicurati di impostare i seguenti valori:
+   ```
+   GOOGLE_SHEETS_CREDENTIALS_JSON=/percorso/assoluto/alla/tua/credentials.json
+   GOOGLE_SHEETS_SPREADSHEET_ID=il_tuo_spreadsheet_id
+   TELEGRAM_BOT_TOKEN=il_tuo_telegram_bot_token
+   ```
+
+3. **Sicurezza**
+   - **NON** committare mai il file `.env` o `credentials.json`
+   - Aggiungi queste righe al tuo `.gitignore`:
+     ```
+     .env
+     *.json
+     credentials/
+     ```
+   - Mantieni il file `credentials.json` in una posizione sicura e con permessi limitati
+
+### 3. Configura Google Sheets
 1. Vai alla [Google Cloud Console](https://console.cloud.google.com/)
 2. Crea un nuovo progetto
 3. Abilita l'API Google Sheets
@@ -86,7 +117,7 @@ Un bot Telegram per la gestione delle spese condivise che salva i dati su Google
 #### `/start`
 Avvia il bot e mostra il messaggio di benvenuto.
 
-#### `/spesa` o `/addexpense`
+#### `/spesa` 
 Aggiungi una nuova spesa.
 
 **Sintassi:**
@@ -104,11 +135,30 @@ Aggiungi una nuova spesa.
 
 ```
 community-chatbot/
-├── bot.py               # Punto di ingresso principale
-├── sheets_handler.py    # Gestione Google Sheets
-├── requirements.txt     # Dipendenze
-├── .env                # Variabili d'ambiente (da creare)
-└── README.md           # Questo file
+├── src/                    # Codice sorgente principale
+│   ├── handlers/           # Gestori dei comandi
+│   │   ├── __init__.py
+│   │   └── expenses.py     # Gestore comandi per le spese
+│   │
+│   ├── services/          # Servizi esterni
+│   │   ├── __init__.py
+│   │   └── sheets.py       # Servizio per Google Sheets
+│   │
+│   ├── utils/            # Utility e helper
+│   │   ├── __init__.py
+│   │   └── validators.py   # Validatori per gli input
+│   │
+│   ├── __init__.py
+│   └── main.py             # Punto di ingresso principale
+│
+├── .env                   # Variabili d'ambiente (da creare)
+├── .gitignore
+├── bot.py                  # Punto di ingresso legacy
+├── bot.log                 # File di log
+├── credentials.json        # Credenziali Google (da non commitare)
+├── requirements.txt        # Dipendenze del progetto
+├── sheets_handler.py       # Gestore Google Sheets legacy
+└── README.md              # Questo file
 ```
 
 ## 🔄 Sviluppo
